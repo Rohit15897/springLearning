@@ -38,12 +38,14 @@ public class TennisCoach implements Coach{
 	
 	@Override
 	public String getDailyWorkout() {
+		System.out.println("this method is called");
 		// TODO Auto-generated method stub
 		return "Practice your backhand valley";
 	}
 
 	@Override
 	public String getFortuneService() {
+		System.out.println("this method is called");
 		// TODO Auto-generated method stub
 		return fortuneService.getFortune();
 	}
