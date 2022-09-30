@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class ConfigFile {
 	private int value;
 	
-	
+	//Some changes i have done lets see if this reflects
 	
 	public ConfigFile() {	}
 	
