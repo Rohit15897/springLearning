@@ -1,0 +1,21 @@
+package com.rohit.springdemo;
+
+public class TennisCoach implements Coach {
+	
+	
+	@Autowired
+	@Qualifier("happyFortuneService")
+	private FortuneService fortuneService;
+	
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "Practice your backhand volley";
+		
+	}
+	
+	public String getDailyFortune() {
+		
+	}
+
+}

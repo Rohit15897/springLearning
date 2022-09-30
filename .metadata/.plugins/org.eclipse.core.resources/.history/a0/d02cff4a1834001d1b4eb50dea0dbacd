@@ -1,0 +1,11 @@
+package com.rohit.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class BeanScopeDemo {
+
+	public static void main(String args[]) {
+		 ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beanScope-applicationContext.xml");
+		 
+	}
+}

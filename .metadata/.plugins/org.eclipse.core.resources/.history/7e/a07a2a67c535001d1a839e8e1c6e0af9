@@ -1,0 +1,15 @@
+package com.rohit.springdemo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class ConfigFile {
+
+	
+	public String toString() {
+		
+		
+		
+		return null;
+	}
+}

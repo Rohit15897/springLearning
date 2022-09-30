@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+  <!-- Define your beans here -->
+  
+  <context: property-placeholder location="classpath:sport.properties" />
+  
+  <bean id="myCoach"  class="com.rohit.springdemo.TrackCoach">
+  	<constructor-arg ref="myFortune"/>
+  </bean>
+  
+  <bean id="myFortune" class="com.rohit.springdemo.HappyFortuneService"></bean>
+
+
+
+<bean id="baseBallCoach" class="com.rohit.springdemo.BaseballCoach">
+
+<constructor-arg ref="myFortune" />
+<property name="fortuneService" ref="myFortune"></property>
+
+</bean>
+
+
+<bean id="criCoach" class="com.rohit.springdemo.CricketCoach">
+	<property name="fortuneService" ref="myFortune"></property>
+	
+	
+	<property name="emailAddress" value="rohitkumar15897.j@gmail.com"></property>
+	<property name="team" value="Mumbai Indians"></property>
+
+</bean>
+
+</beans>
+
+

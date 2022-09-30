@@ -1,0 +1,22 @@
+package com.rohit.springdemo;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+
+public class SportConfig {
+	
+	@Bean
+	public FortuneService happyFortuneService() {
+		return new HappyFortuneService();
+	}
+	
+	@Bean
+	public SwimCoach swimCoach(FortuneService fortuneService) {
+		SwimCoach coach = new SwimCoach(happyFortuneService());
+		
+		return coach;
+	}
+}

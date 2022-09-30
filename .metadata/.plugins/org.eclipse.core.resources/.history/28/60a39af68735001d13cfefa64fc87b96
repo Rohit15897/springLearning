@@ -1,0 +1,16 @@
+package com.rohit.springdemo;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan("com.rohit.springdemo")
+public class SportConfig {
+	
+	@Bean
+	public Coach swimCoach() {
+		SwimCoach coach = new SwimCoach();
+		
+		return coach;
+	}
+}

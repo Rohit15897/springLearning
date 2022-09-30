@@ -1,0 +1,24 @@
+package com.rohit.springdemo;
+
+public class SwimCoach implements Coach{
+
+	FortuneService fortuneService;
+	
+	public SwimCoach(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
+	
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "Swin 1000m as warm up";
+	}
+	
+	public String getDailyFortune() {
+		return fortuneService.getFortune();	}
+	
+	
+	
+	
+
+}

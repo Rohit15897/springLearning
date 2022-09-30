@@ -1,0 +1,6 @@
+package com.rohit.springdemo;
+
+@Component
+public class ConfigFile {
+
+}

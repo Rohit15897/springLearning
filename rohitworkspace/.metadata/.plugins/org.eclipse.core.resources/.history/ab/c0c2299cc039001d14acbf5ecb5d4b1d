@@ -1,0 +1,62 @@
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.io.*;
+
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import groovy.lang.GroovyClassLoader;
+import java.lang.reflect.Modifier;
+
+public class MainClass {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		
+		
+		
+final GroovyClassLoader loader = new GroovyClassLoader();
+		
+		
+		
+		final File script = new File("C:\\Users\\Administrator\\Downloads\\abc.groovy");
+		
+		 
+		
+		
+//		TestProject testProject = new TestProject();
+//		//"Ram", 20, "cse", loader.parseClass(script)
+//		testProject.setAge(20);
+//		testProject.setDepartment("cse");
+//		testProject.setGroovy(loader.parseClass(script));
+//		testProject.setName("Ram");
+//		
+		ObjectMapper Obj = new ObjectMapper();  
+//        try {  
+//            // Converting the Java object into a JSON string  
+//            String jsonStr = Obj.writeValueAsString(testProject);  
+//            // Displaying Java object into a JSON string  
+//            System.out.println(jsonStr); 
+//            
+//            FileWriter fileWriter = new FileWriter("C:\\Users\\Administrator\\Downloads\\rohit.json");
+//            fileWriter.write(jsonStr);
+//            fileWriter.close();
+//        }  
+//        catch (IOException e) {  
+//            e.printStackTrace();  
+//        }  
+		
+		
+		TestProject project = Obj.readValue(new File("C:\\Users\\Administrator\\Downloads\\rohit.json"), TestProject.class);
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

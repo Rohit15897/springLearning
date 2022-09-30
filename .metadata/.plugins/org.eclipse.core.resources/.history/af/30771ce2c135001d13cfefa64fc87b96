@@ -1,0 +1,8 @@
+package com.rohit.springdemo;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class StarterApp {
+
+}

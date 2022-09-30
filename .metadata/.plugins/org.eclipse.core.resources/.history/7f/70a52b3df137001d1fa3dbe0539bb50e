@@ -1,0 +1,23 @@
+package com.rohit.springdemo;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ConfigFile {
+
+	@PostConstruct 
+	public ConfigFile() {
+		
+	}
+	
+	
+	public String toString() {
+		
+		
+		
+		return "I want to call this method";
+	}
+}

@@ -1,0 +1,19 @@
+package com.rohit.springdemo;
+
+public class SwimCoach implements Coach{
+
+	FortuneService fortuneService;
+	
+	
+	
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+	
+
+}

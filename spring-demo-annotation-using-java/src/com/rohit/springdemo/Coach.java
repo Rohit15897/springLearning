@@ -1,0 +1,6 @@
+package com.rohit.springdemo;
+
+public interface Coach {
+	
+	public String getDailyWorkout(); 
+}
